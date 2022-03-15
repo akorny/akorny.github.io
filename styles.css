@@ -1,0 +1,33 @@
+.bigger-text {
+    font-size: 1.25rem;
+}
+
+div.hero {
+    background-image: url("img/lauki.jpg");
+    background-position: 50% 55%;
+    color: white;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+div.no-padding {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+div.mt-cs {
+    margin-top: 6rem;
+}
+
+div.mb-cs {
+    margin-bottom: 6rem;
+}
+
+.custom-text {
+    font-size: 1.5em;
+}
+
+.image-full-size {
+    width: 100%;
+    height: auto;
+}

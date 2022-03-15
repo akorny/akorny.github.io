@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dārzeņu bojāšanas procesa noteikšanas ar gāzu analizātoru</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Custom CSS -->
+        <link href="styles.css" rel="stylesheet" />
+
+        <!-- Bootstrap 5.1.3 CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+
+        <!-- Bootstrap 5.1.3 JS Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body lang="lv-LV">
+        <div class="container-fluid">
+            <!-- Hero image -->
+            <div class="row">
+                <div class="col-12 hero">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h1 class="display-4 fw-bold">
+                                    Dārzeņu bojāšanas procesa noteikšana ar gāzu
+                                    analizātoru
+                                </h1>
+                                <h2 class="fw-normal">
+                                    Zinātniski pētniecisks darbs inženierzinātņu
+                                    nozārē
+                                </h2>
+                                <h3 class="fw-normal fst-italic">
+                                    Rīgas Valsts klasiskā ģimnāzija
+                                </h3>
+                                <p class="bigger-text mb-0">
+                                    <b>Darba autori:</b> <br />
+                                    Aleksandrs Korņijenko 11. klase <br />
+                                    Elīna Smoļakova 11. klase
+                                </p>
+                                <p class="bigger-text">
+                                    <b>Darba vadītāja:</b> <br />
+                                    Mg. paed. Raisa Stunžāne
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Actuality -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row mt-cs">
+                            <div class="col-md-6">
+                                <h2 class="display-5">Pētījuma aktualitāte</h2>
+                                <p class="custom-text">
+                                    Jau kopš seniem laikiem ražas saglabāšana
+                                    bija viens no sabiedrības primārajiem
+                                    uzdevumiem. Sakarā ar to, ka vienam no darba
+                                    autora radiem ir sava lauksaimniecība, viņi
+                                    bieži sastopās ar problēmu, kad, glabājot
+                                    telpā augļus, nevar piefiksēt brīdi, kad tie
+                                    sāk pūt. Tāpēc darba autori nolēmā izveidot
+                                    gāzu analizātoru, lai konstatētu pūšanas
+                                    sākumu.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <img
+                                    class="img-fluid d-block mx-lg-auto"
+                                    src="img/storage.png"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Goal and research question -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 mt-cs">
+                                <h2 class="display-5">Pētījuma mērķis</h2>
+                                <p class="custom-text">
+                                    Noteikt ekonomiskās klases komponentus, ar
+                                    kuru palīdzību var identificēt un izmērīt
+                                    pūšanas procesa izpausmes un ar šiem
+                                    komponentiem izstrādāt iekārtu (gāzu
+                                    analizatoru).
+                                </p>
+                            </div>
+                            <div class="col-md-6 mt-cs">
+                                <h2 class="display-5">Pētījuma jautājums</h2>
+                                <p class="custom-text">
+                                    <i>
+                                        Vai no viegli pieejamiem materiāliem var
+                                        izveidot iekārtu, ar kuras palīdzību var
+                                        noteikt dārzeņu bojāšanās procesu?
+                                    </i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Research methods and objectives -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 mt-cs">
+                                <h2 class="display-5">Pētījuma metodes</h2>
+                                <ul class="list-group custom-text">
+                                    <li class="list-group-item">
+                                        Literatūras analīze
+                                    </li>
+                                    <li class="list-group-item">
+                                        Gāzu analizātora izveide un izpēte
+                                    </li>
+                                    <li class="list-group-item">
+                                        Salīdzinošā analīze
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 mt-cs">
+                                <h2 class="display-5">Pētījuma uzdevumi</h2>
+                                <ul class="list-group custom-text">
+                                    <li class="list-group-item">
+                                        Izanalizēt un apkopot zinātnisko
+                                        literatūru
+                                    </li>
+                                    <li class="list-group-item">
+                                        Izveidot gāzu analizatoru un to
+                                        pārbaudei nepieciešamo programmatūru
+                                    </li>
+                                    <li class="list-group-item">
+                                        Izveidot reģistrēšanas iekārtu
+                                    </li>
+                                    <li class="list-group-item">
+                                        Veikt eksperimentu
+                                    </li>
+                                    <li class="list-group-item">
+                                        Piedāvāt konkrētus problēmas risinājumus
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What we have done? -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 mt-cs">
+                                <h1 class="display-4 fw-bold text-center">
+                                    Ko tad mēs esam izdarījuši?
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sensors -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row mt-cs">
+                            <div class="col-md-6">
+                                <h1 class="display-5">Sensoru atlase</h1>
+                                <p class="custom-text">
+                                    Mēs izvēlējamies 6 veida sensorus, vadoties
+                                    pēc gāzēm, kas izdalās pūšanas laikā. Katra
+                                    sensora veida mūms bija pa 2 eksemplāri.
+                                    Katru sensora veidu pārus pieslēdzam pie
+                                    Arduino Nano un veicam mazus eksperimentus.
+                                </p>
+                                <p class="custom-text">
+                                    Eksperimenta rezultāta, mēs izslēdzam MQ
+                                    serijas sensorus (MQ-2, MQ-4, MQ-5, MQ-9).
+                                    Par pamatu izslēgšanai kļūva tas, ka
+                                    vienados apstākļos šo sensoru rādījumi krasi
+                                    atšķiras.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6">
+                                        <figure>
+                                            <img
+                                                src="img/ccs811.png"
+                                                class="img-fluid"
+                                                alt="CCS811"
+                                            />
+                                            <figcaption
+                                                class="figure-caption text-center"
+                                            >
+                                                CCS811 (ogļskābā gāze, gaistošie
+                                                organiskie savienojumi)
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <figure>
+                                            <img
+                                                src="img/mhz19b.png"
+                                                class="img-fluid"
+                                                alt="MH-Z19B"
+                                            />
+                                            <figcaption
+                                                class="figure-caption text-center"
+                                            >
+                                                MH-Z19B (ogļskābā gāze)
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <figure>
+                                            <img
+                                                src="img/mq2.jpg"
+                                                class="img-fluid"
+                                                alt="MQ-2"
+                                            />
+                                            <figcaption
+                                                class="figure-caption text-center"
+                                            >
+                                                MQ-2 (propāns, metāns, etanols)
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <figure>
+                                            <img
+                                                src="img/mq4.jpg"
+                                                class="img-fluid"
+                                                alt="MQ-4"
+                                            />
+                                            <figcaption
+                                                class="figure-caption text-center"
+                                            >
+                                                MQ-4 (metāns, dabasgāze)
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <figure>
+                                            <img
+                                                src="img/mq5.jpg"
+                                                class="img-fluid"
+                                                alt="MQ-5"
+                                            />
+                                            <figcaption
+                                                class="figure-caption text-center"
+                                            >
+                                                MQ-5 (ogļhidrāti, dabasgāze)
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <figure>
+                                            <img
+                                                src="img/mq5.jpg"
+                                                class="img-fluid"
+                                                alt="MQ-5"
+                                            />
+                                            <figcaption
+                                                class="figure-caption text-center"
+                                            >
+                                                MQ-9 (tvāna gāze, metāns)
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gas analysis device -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row flex-md-row-reverse mt-cs">
+                            <div class="col-md-6">
+                                <h1 class="display-5">
+                                    Gāzu analizēšanas ierīce
+                                </h1>
+                                <p class="custom-text">
+                                    Tālāk mēs izstrādājam gāzu analizēšanas
+                                    ierīci. Tā sastāveja no <i>Arduino Nano</i>,
+                                    sensoriem <i>MH-Z19B</i> un <i>CCS811</i>.
+                                    Mēs esam izveidojuši 2 tādas analizēšanas
+                                    ierīces.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <figure>
+                                    <img
+                                        src="img/gas_analysis_device.png"
+                                        class="image-full-size"
+                                        alt="Gāzu analizēšanas ierīces savienošanas shēma"
+                                    />
+                                    <figcaption
+                                        class="figure-caption text-center"
+                                    >
+                                        Gāzu analizēšanas ierīces komponentu
+                                        savienošanas shēma
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Temp and hum analysis device -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row mt-cs">
+                            <div class="col-md-6">
+                                <h1 class="display-5">
+                                    Temperatūras un mitruma analizēšanas ierīce
+                                </h1>
+                                <p class="custom-text">
+                                    Arī, lai sēkotu līdzi apstākļiem laikā, kad
+                                    tika veikts eksperiments, tika izstrādāta
+                                    temperatūras un gaisa relatīva mitruma
+                                    analizēšanas ierīce, kas sastāvēja no
+                                    <b>NodeMCU 1.0</b> vienplātes
+                                    mikrokontrollera un <b>DHT22</b>
+                                    sensora.
+                                </p>
+                                <p class="custom-text">
+                                    <b>NodeMCU 1.0</b> vienplates
+                                    mikrokontrolleris tika izvelēts tādēļ, ka
+                                    mūms tas bija ātri pieejams, tā
+                                    <b>Wi-Fi</b> funkcionalitāte netika
+                                    izmantota, datu izvadei izmantojot tajā
+                                    iebūvētu <b>CP2102</b>
+                                    <b>USB-UART</b> pārveidotāju.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <figure>
+                                    <img
+                                        src="img/temp_hum_analysis_device.png"
+                                        class="image-full-size"
+                                        alt="Temperatūras un mitruma analizēšanas ierīces savienošanas shēma"
+                                    />
+                                    <figcaption
+                                        class="figure-caption text-center"
+                                    >
+                                        Temperatūras un mitruma analizēšanas
+                                        ierīces savienošanas shēma
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gas analysis device -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row flex-md-row-reverse mt-cs">
+                            <div class="col-md-6">
+                                <h1 class="display-5">Reģistrēšanas ierīce</h1>
+                                <p class="custom-text">
+                                    Tai skaitā tika izstrādāta reģistrēšanas
+                                    ierīce. Tā sastavēja no <b>Raspberry Pi</b>,
+                                    <b>kameras</b> un
+                                    <b>gaismas diožu lentes</b>. Reģistrēšanas
+                                    ierīces uzdevumi bija, pirmkārt, saglabāt
+                                    atmiņā gāzu un eksperimenta apstākļu
+                                    analizēšanas ierīču rādījumus, otrkārt, ik
+                                    pēc 5 minūtem ieslēgt gaismas diožu lenti,
+                                    un fotografēt ābolu. Eksperimenta gaitā
+                                    temperatūra bija ap <b>13°C</b>, gaisa
+                                    relatīvais mitrums bija ap <b>45%</b>.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <figure>
+                                    <img
+                                        src="img/experiment setup.jpg"
+                                        class="image-full-size"
+                                        alt="Gāzu, temperatūras un mitruma analizatori pieslēgti pie reģistrēšanas ierīces"
+                                    />
+                                    <figcaption
+                                        class="figure-caption text-center"
+                                    >
+                                        Gāzu, temperatūras un mitruma
+                                        analizatori pieslēgti pie reģistrēšanas
+                                        ierīces
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 mt-cs">
+                                <h1 class="display-4 fw-bold text-center">
+                                    Rezultātu analīze
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Graphic -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row mt-cs">
+                            <div class="col-md-12">
+                                <h1 class="display-5">
+                                    Sensoru rādījumu grafiks
+                                </h1>
+                                <p class="custom-text">
+                                    Pēc eksperimenta veikšanas mēs, izmantojot
+                                    <b>Python</b> bibliotēku <b>matplotlib</b>,
+                                    esam izveidojuši grafiku, balstoties uz
+                                    eksperimenta gaitā iegūtajiem sensoru
+                                    radījumiem. Grafikā ir redzams, ka ir
+                                    veidojušies divi pīķi. Viens no tiem bija
+                                    13. janvārī, bet otrs 14. janvārī. Kas tad
+                                    notiek ar ābolu brīžos, kad sensoru rādījumi
+                                    bija paaugstināti?
+                                </p>
+                            </div>
+                            <div class="col-md-12">
+                                <figure>
+                                    <img
+                                        src="img/graph.svg"
+                                        class="image-full-size"
+                                        alt="CCS811 un MH-Z19B sensoru rādījumi no
+                                        2022. gada 13. janvāra plkst. 0.00 līdz
+                                        2022. gada 15. janvārim plkst. 12.00"
+                                    />
+                                    <figcaption
+                                        class="figure-caption text-center"
+                                    >
+                                        CCS811 un MH-Z19B sensoru rādījumi no
+                                        2022. gada 13. janvāra plkst. 0.00 līdz
+                                        2022. gada 15. janvārim plkst. 12.00
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Apple -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row mt-cs">
+                            <div class="col-md-12">
+                                <h1 class="display-5">Kas notiek ar ābolu?</h1>
+                                <p class="custom-text">
+                                    Izradījās, ka brīžos, kad sensoru rādījumi
+                                    ir paaugstināti, ābolam mainās krāsa.
+                                    Piemēram, attēlā (sk. zēmāk), kas tika
+                                    uzņemts 13. janvārī plkst. 18.30 ir mazs
+                                    balts punktiņš, bet pirms 5 minūtēm tā
+                                    punktiņa nebija.
+                                    <b
+                                        >Tādejādi var secināt, ka mainās ābola
+                                        krāsa. No tā izriet, ka ābolā notiek
+                                        ķīmiskā reakcija, tad tā ir pūšanas
+                                        reakcija. Ja notiek pūšana, tad izdalās
+                                        pūšanas produkti - ogļskāba gāze, metāns
+                                        un etanols.</b
+                                    >
+                                    Tos veiksmīgi fiksē mūsu sensori. Arī darba
+                                    autori izveidoja nelielu video (sk. zēmāk),
+                                    kas labāk parāda, kur tad mainās ābola
+                                    krāsa.
+                                </p>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <figure>
+                                                    <img
+                                                        src="img/apple1.png"
+                                                        class="img-fluid"
+                                                        alt="Ābols 2022. gada 13.
+                                                        janvārī plkst. 18.25"
+                                                    />
+                                                    <figcaption
+                                                        class="figure-caption text-center"
+                                                    >
+                                                        Ābols 2022. gada 13.
+                                                        janvārī plkst. 18.25
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <figure>
+                                                    <img
+                                                        src="img/apple2.png"
+                                                        class="img-fluid"
+                                                        alt="Ābols 2022. gada 13.
+                                                        janvārī plkst. 18.30"
+                                                    />
+                                                    <figcaption
+                                                        class="figure-caption text-center"
+                                                    >
+                                                        Ābols 2022. gada 13.
+                                                        janvārī plkst. 18.30
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <iframe
+                                            width="100%"
+                                            height="350px"
+                                            src="https://www.youtube.com/embed/Sba2cA0erGs"
+                                            title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen
+                                        ></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secinājumi -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 mt-cs mb-2">
+                                <h1 class="display-4 fw-bold text-center">
+                                    Secinājumi
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="custom-text">
+                                    Mēs var secināt, ka mums izdevās noteikt un
+                                    izveidot gāzu analizatoru no viegli
+                                    pieejamiem komponentiem un izstrādāt
+                                    nepieciešamo programmatūru un reģistrēšanas
+                                    ierīci, piedāvājot problēmas risinājumu.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-group">
+                                    <li
+                                        class="list-group-item list-group-item-success custom-text"
+                                    >
+                                        ✓&nbsp;Izanalizēta un apkopota
+                                        zinātniskā literatūra
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-success custom-text"
+                                    >
+                                        ✓&nbsp;Izgātāvots gāzu detektors
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-success custom-text"
+                                    >
+                                        ✓&nbsp;Izstrādāta programmatūra
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-success custom-text"
+                                    >
+                                        ✓&nbsp;Izveidota reģistrēšanas iekārta
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-success custom-text"
+                                    >
+                                        ✓&nbsp;Tika veikts eksperiments
+                                    </li>
+                                    <li
+                                        class="list-group-item list-group-item-success custom-text"
+                                    >
+                                        ✓&nbsp;Atrasts problēmas risinājums
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Answers on questions -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 mt-cs">
+                                <h1 class="display-4 fw-bold text-center">
+                                    Atbildes uz recenzenta jautājumiem
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1. question -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row mt-cs">
+                            <div class="col-md-12">
+                                <h1 class="display-5">
+                                    Kā tika nodrošināta temperatūra 13 grādi
+                                    eksperimenta laikā?
+                                </h1>
+                            </div>
+                            <div class="col-md-5">
+                                <p class="custom-text">
+                                    Eksperiments tika veikts darba autora
+                                    ģimenes vasarnīca. Tur ir uzstādīts
+                                    automatizēts gāzes katls, kas var nodrošināt
+                                    praktiski nemainīgu gaisa temperatūru
+                                    telpās. Ka pierādījumu tam, ka eksperimenta
+                                    laikā bija nodrošināta gandrīz vienāda
+                                    temperatūra un gaisa mitrums, varam apskatīt
+                                    grafiku, kas tika izveidots, balstoties uz
+                                    temperatūras un gaisa relatīva mitruma
+                                    analizēšanas ierīces rādījumiem eksperimenta
+                                    laikā. Ka var redzēt grafikā, temperatūra
+                                    svārstās ap <b>12,5°C</b>, bet gaisa
+                                    relatīvais mitrums svārstās ap <b>45%</b>.
+                                </p>
+                            </div>
+                            <div class="col-md-7">
+                                <figure>
+                                    <img
+                                        src="img/temphumgraph.svg"
+                                        class="image-full-size"
+                                        alt="Temperatūra un gaisa relatīvais mitrums eksperimenta laikā"
+                                    />
+                                    <figcaption
+                                        class="figure-caption text-center"
+                                    >
+                                        Temperatūra un gaisa relatīvais mitrums
+                                        eksperimenta laikā
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. un 3. jautājums -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 mt-cs">
+                                <h1 class="display-5">
+                                    Kā var izskaidrot divu pīķu parādīšanos
+                                    sensoru rādījumiem?
+                                </h1>
+                                <h1 class="display-5">
+                                    Kā darbā izmaiņas augļa krāsā tika
+                                    sasaistītas ar sensoru rādījumiem?
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="custom-text">
+                                    Atbildēsim uz tiem atbildēt vienā piegājienā,
+                                    vēlreiz izskaidrojot mūsu pierādījuma
+                                    loģisko ķēdi. Apskatoties ābolu attēlus,
+                                    esam konstatējuši, ka ābola krāsa
+                                    mainās. Ābola krāsas maiņa liecina par to,
+                                    ka ābola notiek ķīmiskās reakcijas. Ķīmiskās
+                                    reakcijas, kas notiek ābolā ir pūšanas
+                                    reakcijas. Pūšanas reakcijas produkti ir
+                                    ogļskābā gāze, metāns un etanols. Un tos
+                                    produktus ir veiksmīgi fiksējuši mūsu
+                                    sensori.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
